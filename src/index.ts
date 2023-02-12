@@ -33,7 +33,6 @@ import { Wave } from './scenes/wave';
       wave.update(timeStep);
       const paths = wave.draw();
       paths.forEach(p => scene.add(p));
-      // console.log(i, scene.points)
     });
     lastTime = curTime;
   }

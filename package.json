@@ -9,6 +9,7 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
+    "run:watch": "tsnd --respawn -- ./src/index.ts",
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
