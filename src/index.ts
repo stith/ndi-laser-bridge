@@ -18,7 +18,7 @@ import { Wave } from './scenes/wave';
       frequency: 20,
       amplitude: 0.5,
       speed: 1,
-      steps: 100,
+      steps: 150,
     })
   ];
 

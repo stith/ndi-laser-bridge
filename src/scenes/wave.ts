@@ -52,7 +52,7 @@ export class Wave {
     const len = this.data.length;
     for (let i = 0; i < len; i++) {
       const pos = this.data[i];
-      const color = hsv.rgb([360 * (i / len), 50, 100]);
+      const color = hsv.rgb([360 * (i / len), 100, 100]);
       out.push(new Line({
         from: lastPos,
         to: pos,
