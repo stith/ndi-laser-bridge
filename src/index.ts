@@ -10,7 +10,7 @@ import { Wave } from './scenes/wave';
 const NDI_ATTEMPTS = 3;
 
 // How many vertical slices to cut the screen into, both for laser drawing and color averaging
-const RESOLUTION = 150;
+const RESOLUTION = 500;
 
 (async () => {
   const dac = new DAC();
@@ -96,9 +96,9 @@ const RESOLUTION = 150;
         [prev[0] + next[0], prev[1] + next[1], prev[2] + next[2]]
       , [0, 0, 0])
       pixelGroup.push([
-        summed[0] / item.length,
-        summed[1] / item.length,
-        summed[2] / item.length,
+        (summed[0] / item.length) / 256,
+        (summed[1] / item.length) / 256,
+        (summed[2] / item.length) / 256,
       ]);
       return pixelGroup;
     }, [] as Color[]);
@@ -110,8 +110,10 @@ const RESOLUTION = 150;
     waves.forEach((wave) => {
       wave.update(timeStep);
       const paths = wave.draw();
+      let lastSample: Color | undefined;
       paths.forEach((p, i) => {
-        p.color = colorSamples[i] ?? [1, 1, 1];
+        lastSample = colorSamples[i] ?? lastSample;
+        p.color = lastSample;
       })
       paths.forEach(p => scene.add(p));
     });
