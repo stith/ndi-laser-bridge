@@ -13,13 +13,10 @@ const NDI_ATTEMPTS = 3;
 const RESOLUTION = 500;
 
 (async () => {
+  console.log('Starting...')
   const dac = new DAC();
   dac.use(new Simulator());
   await dac.start();
-
-  console.log('Starting...')
-
-
 
   let source: grandiose.Source | undefined;
   console.info('Looking for NDI source...');
@@ -33,7 +30,7 @@ const RESOLUTION = 500;
     if (source) {
       break;
     } else {
-      console.info(`No NDI sources found, attempt ${i}/${NDI_ATTEMPTS}.`)
+      console.info(`No NDI sources found, attempt ${i+1}/${NDI_ATTEMPTS}.`)
     }
   }
 
@@ -46,6 +43,8 @@ const RESOLUTION = 500;
     source: source,
     colorFormat: grandiose.COLOR_FORMAT_RGBX_RGBA,
   });
+
+  // NDI doesn't seem to like giving me a video frame without recieving this stateChange packet first
   const dataFrame = await receiver.data();
   console.log({dataFrame})
 

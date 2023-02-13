@@ -1,5 +1,4 @@
 import { Line } from '@laser-dac/draw';
-import { hsv } from 'color-convert';
 
 interface WaveOptions {
   x: number;
@@ -36,28 +35,16 @@ export class Wave {
     this.data = [];
   }
 
-  pathDataToSvgStrings = (): string[] => {
-    let lastPos = this.data[0];
-    const out: string[] = [];
-    for (const pos of this.data) {
-      out.push(`M ${lastPos.x} ${lastPos.y} L ${pos.x} ${pos.y}`)
-      lastPos = pos;
-    }
-    return out;
-  }
-
   pathDataToLines = (): Line[] => {
     let lastPos = this.data[0];
     const out: Line[] = [];
     const len = this.data.length;
     for (let i = 0; i < len; i++) {
       const pos = this.data[i];
-      const color = hsv.rgb([360 * (i / len), 100, 100]);
       out.push(new Line({
         from: lastPos,
         to: pos,
-        color: [color[0] / 256, color[1] / 256, color[2] / 256],
-        // blankAfter: true,
+        color: [1, 1, 1],
         blankBefore: true,
       }))
       lastPos = pos;
@@ -71,8 +58,7 @@ export class Wave {
         Math.sqrt(x * (this.frequency * this.steps)) - this.offset
       )
     ) *
-    x *
-    (/*0.1 **/ this.amplitude);
+    x * this.amplitude;
 
   update = (timeStep: number) => {
     const STEP_SIZE = 1/this.steps;
@@ -82,6 +68,7 @@ export class Wave {
       x: this.x,
       y: this.y
     }];
+
     for (let x = 0; x < 1; x += STEP_SIZE) {
 			this.data.push({
 					x: this.x + x,
@@ -92,11 +79,6 @@ export class Wave {
 
   draw = () => {
     return this.pathDataToLines();
-    // const pathStrings = this.pathDataToSvgStrings();
-    // return pathStrings.map((str, i) => new Path({
-    //   path: str,
-    //   color: [0, i/pathStrings.length, 0],
-    // }))
   }
 
 }
