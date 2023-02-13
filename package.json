@@ -46,7 +46,9 @@
     "@laser-dac/core": "^0.4.2",
     "@laser-dac/draw": "^0.6.1",
     "@laser-dac/simulator": "^0.3.4",
-    "color-convert": "^2.0.1"
+    "color-convert": "^2.0.1",
+    "grandiose": "https://github.com/Streampunk/grandiose.git#296cf5dbffeea66f8eb7e7955dfc2f20d4a12531",
+    "node-gyp": "^9.3.1"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
@@ -57,7 +59,6 @@
     "@typescript-eslint/parser": "^4.0.1",
     "ava": "^3.12.1",
     "codecov": "^3.5.0",
-    "cspell": "^4.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.8.0",
     "eslint-config-prettier": "^6.11.0",

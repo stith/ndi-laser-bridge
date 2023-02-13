@@ -21,10 +21,7 @@
       { "allowWholeFile": true }
     ],
     "eslint-comments/no-unused-disable": "error",
-    "import/order": [
-      "error",
-      { "newlines-between": "always", "alphabetize": { "order": "asc" } }
-    ],
+    "import/order": 0,
     "sort-imports": [
       "error",
       { "ignoreDeclarationSort": true, "ignoreCase": true }
