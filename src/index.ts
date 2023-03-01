@@ -54,7 +54,7 @@ const RESOLUTION = 500;
       x: 0,
       y: 0.5,
       frequency: 20,
-      amplitude: 0.5,
+      amplitude: 0.1,
       speed: 1,
       steps: RESOLUTION,
     })
