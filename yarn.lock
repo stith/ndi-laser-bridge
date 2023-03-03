@@ -511,6 +511,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@laser-dac/helios@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@laser-dac/helios@npm:0.3.2"
+  dependencies:
+    "@laser-dac/core": ^0.4.2
+    "@types/ffi-napi": ^2.4.2
+    "@types/ref-napi": ^1.4.1
+    ffi-napi: ^3.0.0
+    ref-array-di: ^1.2.1
+    ref-napi: ^2.0.1
+    ref-struct-di: ^1.1.0
+  checksum: b2bdf9b3103b9412dadf52894f06911aa43d4b6acc8668f03b46b8ae0260e754ad2e12b9bbad684c717b871c76929ebd0ef24c910ecba66b0775a2d657069981
+  languageName: node
+  linkType: hard
+
 "@laser-dac/ilda-reader@npm:^0.3.3":
   version: 0.3.3
   resolution: "@laser-dac/ilda-reader@npm:0.3.3"
@@ -715,6 +730,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ffi-napi@npm:^2.4.2":
+  version: 2.4.3
+  resolution: "@types/ffi-napi@npm:2.4.3"
+  dependencies:
+    "@types/node": "*"
+    "@types/ref-napi": "*"
+    "@types/ref-struct-di": "*"
+  checksum: e255a24b09e1f668cb35c709684bbaacaa3b70d46d1b455a23d44179c09294cabde2b794a42ab1cb573367c3ed572f49592c9ca9002f09070c5ee8a96652830b
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.7":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
@@ -777,6 +803,33 @@ __metadata:
   version: 1.2.4
   resolution: "@types/range-parser@npm:1.2.4"
   checksum: b7c0dfd5080a989d6c8bb0b6750fc0933d9acabeb476da6fe71d8bdf1ab65e37c136169d84148034802f48378ab94e3c37bb4ef7656b2bec2cb9c0f8d4146a95
+  languageName: node
+  linkType: hard
+
+"@types/ref-napi@npm:*":
+  version: 3.0.7
+  resolution: "@types/ref-napi@npm:3.0.7"
+  dependencies:
+    "@types/node": "*"
+  checksum: bfb562056002e47d200026d3e28eee241b6eeb5e54c3390380481021b775d7f5f33f49ecf5cc68e0cdda4838d388882488226fc9176748b3401f99dff1616e8d
+  languageName: node
+  linkType: hard
+
+"@types/ref-napi@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@types/ref-napi@npm:1.4.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 6e46c15d1b861b0724b0b3bedd9b39602e2e4f6813342217da0803268baded605bb3ef21a1782d65073b4f0812368bf7fbaf1541c187f5b09cf780dd71eaa1a4
+  languageName: node
+  linkType: hard
+
+"@types/ref-struct-di@npm:*":
+  version: 1.1.8
+  resolution: "@types/ref-struct-di@npm:1.1.8"
+  dependencies:
+    "@types/ref-napi": "*"
+  checksum: 7533ecd17641af24dd0818d31d354b8cad38d33c019aa4362d2300b421cbc0f96838aa510f1f741dd5a2cd942bd49ac64b581d415a497cbbd19a389a30d90ba2
   languageName: node
   linkType: hard
 
@@ -1214,6 +1267,16 @@ __metadata:
     get-intrinsic: ^1.1.3
     is-string: ^1.0.7
   checksum: f22f8cd8ba8a6448d91eebdc69f04e4e55085d09232b5216ee2d476dab3ef59984e8d1889e662c6a0ed939dcb1b57fd05b2c0209c3370942fc41b752c82a2ca5
+  languageName: node
+  linkType: hard
+
+"array-index@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "array-index@npm:1.0.0"
+  dependencies:
+    debug: ^2.2.0
+    es6-symbol: ^3.0.2
+  checksum: ea43314f55f7026169acb78884f464bd650f525c1bf54c8a73dd021571b233677ce7028ea4b606269f3e6033a2e26a9560a5fd5582d4fb349592f0364aaf76de
   languageName: node
   linkType: hard
 
@@ -2349,6 +2412,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"d@npm:1, d@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "d@npm:1.0.1"
+  dependencies:
+    es5-ext: ^0.10.50
+    type: ^1.0.1
+  checksum: 49ca0639c7b822db670de93d4fbce44b4aa072cd848c76292c9978a8cd0fff1028763020ff4b0f147bd77bfe29b4c7f82e0f71ade76b2a06100543cdfd948d19
+  languageName: node
+  linkType: hard
+
 "dargs@npm:^7.0.0":
   version: 7.0.0
   resolution: "dargs@npm:7.0.0"
@@ -2372,7 +2445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:2.6.9":
+"debug@npm:2.6.9, debug@npm:^2.2.0":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
   dependencies:
@@ -2393,7 +2466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^3.2.7":
+"debug@npm:^3.1.0, debug@npm:^3.2.7":
   version: 3.2.7
   resolution: "debug@npm:3.2.7"
   dependencies:
@@ -2796,10 +2869,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es5-ext@npm:^0.10.35, es5-ext@npm:^0.10.50":
+  version: 0.10.62
+  resolution: "es5-ext@npm:0.10.62"
+  dependencies:
+    es6-iterator: ^2.0.3
+    es6-symbol: ^3.1.3
+    next-tick: ^1.1.0
+  checksum: 25f42f6068cfc6e393cf670bc5bba249132c5f5ec2dd0ed6e200e6274aca2fed8e9aec8a31c76031744c78ca283c57f0b41c7e737804c6328c7b8d3fbcba7983
+  languageName: node
+  linkType: hard
+
 "es6-error@npm:^4.0.1":
   version: 4.1.1
   resolution: "es6-error@npm:4.1.1"
   checksum: ae41332a51ec1323da6bbc5d75b7803ccdeddfae17c41b6166ebbafc8e8beb7a7b80b884b7fab1cc80df485860ac3c59d78605e860bb4f8cd816b3d6ade0d010
+  languageName: node
+  linkType: hard
+
+"es6-iterator@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "es6-iterator@npm:2.0.3"
+  dependencies:
+    d: 1
+    es5-ext: ^0.10.35
+    es6-symbol: ^3.1.1
+  checksum: 6e48b1c2d962c21dee604b3d9f0bc3889f11ed5a8b33689155a2065d20e3107e2a69cc63a71bd125aeee3a589182f8bbcb5c8a05b6a8f38fa4205671b6d09697
+  languageName: node
+  linkType: hard
+
+"es6-symbol@npm:^3.0.2, es6-symbol@npm:^3.1.1, es6-symbol@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "es6-symbol@npm:3.1.3"
+  dependencies:
+    d: ^1.0.1
+    ext: ^1.1.2
+  checksum: cd49722c2a70f011eb02143ef1c8c70658d2660dead6641e160b94619f408b9cf66425515787ffe338affdf0285ad54f4eae30ea5bd510e33f8659ec53bcaa70
   languageName: node
   linkType: hard
 
@@ -3149,6 +3254,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ext@npm:^1.1.2":
+  version: 1.7.0
+  resolution: "ext@npm:1.7.0"
+  dependencies:
+    type: ^2.7.2
+  checksum: ef481f9ef45434d8c867cfd09d0393b60945b7c8a1798bedc4514cb35aac342ccb8d8ecb66a513e6a2b4ec1e294a338e3124c49b29736f8e7c735721af352c31
+  languageName: node
+  linkType: hard
+
 "external-editor@npm:^3.0.3":
   version: 3.1.0
   resolution: "external-editor@npm:3.1.0"
@@ -3207,6 +3321,21 @@ __metadata:
   dependencies:
     reusify: ^1.0.4
   checksum: 0170e6bfcd5d57a70412440b8ef600da6de3b2a6c5966aeaf0a852d542daff506a0ee92d6de7679d1de82e644bce69d7a574a6c93f0b03964b5337eed75ada1a
+  languageName: node
+  linkType: hard
+
+"ffi-napi@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "ffi-napi@npm:3.1.0"
+  dependencies:
+    debug: ^4.1.1
+    get-uv-event-loop-napi-h: ^1.0.5
+    node-addon-api: ^2.0.0
+    node-gyp: latest
+    node-gyp-build: ^4.2.1
+    ref-napi: ^2.0.1
+    ref-struct-di: ^1.1.0
+  checksum: c256b77400b82c1ef4518fd029c0c077a56eb8f882ea4786f0f23bad0a1ef788e2c70efb5af78dfab9ea19faef38fdae523f86cacd0b2d4a18a6cc4a8bfe13c7
   languageName: node
   linkType: hard
 
@@ -3616,6 +3745,22 @@ __metadata:
     call-bind: ^1.0.2
     get-intrinsic: ^1.1.1
   checksum: 9ceff8fe968f9270a37a1f73bf3f1f7bda69ca80f4f80850670e0e7b9444ff99323f7ac52f96567f8b5f5fbe7ac717a0d81d3407c7313e82810c6199446a5247
+  languageName: node
+  linkType: hard
+
+"get-symbol-from-current-process-h@npm:^1.0.1, get-symbol-from-current-process-h@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "get-symbol-from-current-process-h@npm:1.0.2"
+  checksum: d47cc1b9e0be27469e2af0555b21aaa5ebd114e8aa25bb0e2616c8abaebb7933e7b5bedcc31c6cad06e4df232e0fe280118001fec78da488f5f630b65cc1cae5
+  languageName: node
+  linkType: hard
+
+"get-uv-event-loop-napi-h@npm:^1.0.5":
+  version: 1.0.6
+  resolution: "get-uv-event-loop-napi-h@npm:1.0.6"
+  dependencies:
+    get-symbol-from-current-process-h: ^1.0.1
+  checksum: 3a2a9f9fc18196113d94496c79d5208c7e750cee6f65625fa34df195cab6bf9f122981c923e10cadd81d7f8da1ff92fe4020a7414d3ec16c820dee18e45bb29c
   languageName: node
   linkType: hard
 
@@ -5491,6 +5636,7 @@ __metadata:
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@laser-dac/core": ^0.4.2
     "@laser-dac/draw": ^0.6.1
+    "@laser-dac/helios": ^0.3.2
     "@laser-dac/simulator": ^0.3.4
     "@types/color-convert": ^2.0.0
     "@types/node": ^18.13.0
@@ -5534,10 +5680,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-tick@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "next-tick@npm:1.1.0"
+  checksum: 83b5cf36027a53ee6d8b7f9c0782f2ba87f4858d977342bfc3c20c21629290a2111f8374d13a81221179603ffc4364f38374b5655d17b6a8f8a8c77bdea4fe8b
+  languageName: node
+  linkType: hard
+
 "nice-try@npm:^1.0.4":
   version: 1.0.5
   resolution: "nice-try@npm:1.0.5"
   checksum: 0b4af3b5bb5d86c289f7a026303d192a7eb4417231fe47245c460baeabae7277bcd8fd9c728fb6bd62c30b3e15cd6620373e2cf33353b095d8b403d3e8a15aff
+  languageName: node
+  linkType: hard
+
+"node-addon-api@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "node-addon-api@npm:2.0.2"
+  dependencies:
+    node-gyp: latest
+  checksum: 31fb22d674648204f8dd94167eb5aac896c841b84a9210d614bf5d97c74ef059cc6326389cf0c54d2086e35312938401d4cc82e5fcd679202503eb8ac84814f8
   languageName: node
   linkType: hard
 
@@ -5552,6 +5714,17 @@ __metadata:
     encoding:
       optional: true
   checksum: acb04f9ce7224965b2b59e71b33c639794d8991efd73855b0b250921382b38331ffc9d61bce502571f6cc6e11a8905ca9b1b6d4aeb586ab093e2756a1fd190d0
+  languageName: node
+  linkType: hard
+
+"node-gyp-build@npm:^4.2.1":
+  version: 4.6.0
+  resolution: "node-gyp-build@npm:4.6.0"
+  bin:
+    node-gyp-build: bin.js
+    node-gyp-build-optional: optional.js
+    node-gyp-build-test: build-test.js
+  checksum: 25d78c5ef1f8c24291f4a370c47ba52fcea14f39272041a90a7894cd50d766f7c8cb8fb06c0f42bf6f69b204b49d9be3c8fc344aac09714d5bdb95965499eb15
   languageName: node
   linkType: hard
 
@@ -6498,6 +6671,40 @@ __metadata:
     indent-string: ^4.0.0
     strip-indent: ^3.0.0
   checksum: fa1ef20404a2d399235e83cc80bd55a956642e37dd197b4b612ba7327bf87fa32745aeb4a1634b2bab25467164ab4ed9c15be2c307923dd08b0fe7c52431ae6b
+  languageName: node
+  linkType: hard
+
+"ref-array-di@npm:^1.2.1":
+  version: 1.2.2
+  resolution: "ref-array-di@npm:1.2.2"
+  dependencies:
+    array-index: ^1.0.0
+    debug: ^3.1.0
+    node-gyp: latest
+  checksum: 69e076831bb1affdec28af85e24eb82fde69408143909ecf07623f40ab61f2e9c20dd46334ebef49dd2c093fc1eb4973771b9e57ed5ebe3e043b1a8a104f9e95
+  languageName: node
+  linkType: hard
+
+"ref-napi@npm:^2.0.1":
+  version: 2.1.2
+  resolution: "ref-napi@npm:2.1.2"
+  dependencies:
+    debug: ^4.1.1
+    get-symbol-from-current-process-h: ^1.0.2
+    node-addon-api: ^2.0.0
+    node-gyp: latest
+    node-gyp-build: ^4.2.1
+  checksum: cfc04c5c5a02a1475b4b7713333af26595e3f28b2cb7a3cb3f7b7dcbcb14209c4bffe97b9e9303003de60d1351bb10be178c286411b2f7a3e70075638cc818f0
+  languageName: node
+  linkType: hard
+
+"ref-struct-di@npm:^1.1.0":
+  version: 1.1.1
+  resolution: "ref-struct-di@npm:1.1.1"
+  dependencies:
+    debug: ^3.1.0
+    node-gyp: latest
+  checksum: 787dec1439628260b7928e5b53ff4cb83012e30e4a32b8b2d5198f138925b4bddf72de9da5c7ee6801c9f9c1427946bd911d58a249ce4f4babf2998cc69f0244
   languageName: node
   linkType: hard
 
@@ -7729,6 +7936,20 @@ __metadata:
     media-typer: 0.3.0
     mime-types: ~2.1.24
   checksum: 2c8e47675d55f8b4e404bcf529abdf5036c537a04c2b20177bcf78c9e3c1da69da3942b1346e6edb09e823228c0ee656ef0e033765ec39a70d496ef601a0c657
+  languageName: node
+  linkType: hard
+
+"type@npm:^1.0.1":
+  version: 1.2.0
+  resolution: "type@npm:1.2.0"
+  checksum: dae8c64f82c648b985caf321e9dd6e8b7f4f2e2d4f846fc6fd2c8e9dc7769382d8a52369ddbaccd59aeeceb0df7f52fb339c465be5f2e543e81e810e413451ee
+  languageName: node
+  linkType: hard
+
+"type@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "type@npm:2.7.2"
+  checksum: 0f42379a8adb67fe529add238a3e3d16699d95b42d01adfe7b9a7c5da297f5c1ba93de39265ba30ffeb37dfd0afb3fb66ae09f58d6515da442219c086219f6f4
   languageName: node
   linkType: hard
 

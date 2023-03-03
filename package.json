@@ -45,6 +45,7 @@
     "@bitauth/libauth": "^1.17.1",
     "@laser-dac/core": "^0.4.2",
     "@laser-dac/draw": "^0.6.1",
+    "@laser-dac/helios": "^0.3.2",
     "@laser-dac/simulator": "^0.3.4",
     "color-convert": "^2.0.1",
     "grandiose": "https://github.com/Streampunk/grandiose.git#296cf5dbffeea66f8eb7e7955dfc2f20d4a12531",
